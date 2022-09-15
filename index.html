@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Biodata Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>My Biodata Form</h1>
+      <form
+        title="fill this form"
+        action="https://getbootstrap.com/docs/4.5/components/modal/"
+        method="get"
+      >
+        <!-- first grouped form -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="first-name">FirstName</label
+            ><input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="First Name"
+              required
+              minlength="5"
+              maxlength="10"
+            />
+            <label for="last-name">LastName</label
+            ><input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Last Name"
+              required
+              minlength="5"
+              maxlength="10"
+            />
+          </p>
+          <p>
+            <label for="male">Male</label
+            ><input
+              type="radio"
+              name="gender"
+              id="male"
+              value="male"
+              required
+            />
+            <label for="female">Female</label
+            ><input type="radio" name="gender" id="female" required />
+            <label for="others">Others</label
+            ><input type="radio" name="gender" id="others" required />
+          </p>
+          <p>
+            <label for="date-of-birth">Date Of Birth</label
+            ><input
+              type="datetime-local"
+              name="date-of-birth"
+              id="date-of-birth"
+            />
+          </p>
+          <p>
+            <label for="email">Email</label
+            ><input
+              type="email"
+              required
+              placeholder="email"
+              name="email"
+              id="email"
+            />
+          </p>
+          <p>
+            <label for="phone-nos">Phone Number</label
+            ><input
+              type="tel"
+              name="phone-nos"
+              id="phone-nos"
+              placeholder="+91"
+              required
+              maxlength="9"
+              minlength="8"
+            />
+          </p>
+        </fieldset>
+
+        <!-- second grouped form  -->
+        <fieldset>
+          <legend>Education</legend>
+          <p>
+            <label for="school-name">School Name</label
+            ><input
+              type="text"
+              name="school-name"
+              id="school-name"
+              placeholder="school"
+              required
+            />
+          </p>
+          <p>
+            <label for="your-class">Class</label
+            ><input
+              type="text"
+              name="your-class"
+              id="your-class"
+              required
+              placeholder="Enter Class"
+            />
+          </p>
+          <p>
+            <label for="Service">Stream</label>
+            <select name="Service" id="Service" required>
+              <option selected value="stream">stream</option>
+              <option value="download">download</option>
+              <option value="package">package</option>
+            </select>
+          </p>
+          <p>
+            <label for="marksheet">Marksheet</label
+            ><input type="file" name="marksheet" id="marksheet" required />
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

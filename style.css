@@ -1,0 +1,12 @@
+body{
+    background: grey;
+}
+
+fieldset{
+    margin: 10px;
+    border: 1px solid black;
+}
+
+label{
+    margin-right: 2px;
+}
